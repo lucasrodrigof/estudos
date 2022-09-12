@@ -1,4 +1,4 @@
-<h1> Hi! My name is Lucas Rodrigo. </h1>
+<h1> Olá! Meu nome é Lucas Rodrigo. </h1>
 
 <div>
   <a href="https://github.com/lucasrodrigof">
