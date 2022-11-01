@@ -7,6 +7,10 @@ import  service from "../services"; /*coloco o nome q eu quiser na variavel para
 import { Header } from "../components/Header/header";
 import { Acumulado } from "../components/Acumulado";
 import { Local } from "../components/Local";
+import { Concurso } from "../Concurso";
+import { Valor } from "../components/Dezenas";
+
+
 
 
 export default function Principal(){
@@ -31,6 +35,9 @@ export default function Principal(){
           <Header numero={concurso.numero} dataApuracao={concurso.dataApuracao} />
           {concurso.acumulado &&<Acumulado />}
           <Local localSorteio={concurso.localSorteio} nomeMunicipioUFSorteio={concurso.nomeMunicipioUFSorteio}/>
+          <Valor listaDezenas={concurso.listaDezenas}/>
+          <Concurso  dataProximoConcurso={concurso.dataProximoConcurso} valorEstimadoProximoConcurso={concurso.valorEstimadoProximoConcurso}/>
+          
           </>
         );
 }
